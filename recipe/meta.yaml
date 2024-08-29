@@ -1,5 +1,5 @@
 {% set name = "pkg-about" %}
-{% set version = "1.1.7" %}
+{% set version = "1.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pkg_about-{{ version }}.zip
-  sha256: 814da12eb887a9d234bf663f72abe56e4baf5af6ac1a020fe00a1807fa0e6572
+  sha256: 195577974ad4f2093179d3a2315540b746c4a82b723bed4b487c482a30656cf9
 
 build:
   noarch: python
@@ -17,14 +17,14 @@ build:
 requirements:
   host:
     - python >=3.8.10,<4.0.0
-    - setuptools >=70.1.1
-    - wheel >=0.43.0
+    - setuptools >=72.2.0
+    - wheel >=0.44.0
     - packaging >=24.1.0
-    - tox >=4.15.1
+    - tox >=4.18.0
     - pip
   run:
     - python >=3.8.10,<4.0.0
-    - setuptools >=70.1.1
+    - setuptools >=72.2.0
     - packaging >=24.1.0
     - tomli >=2.0.1
 
