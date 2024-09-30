@@ -1,5 +1,5 @@
 {% set name = "pkg-about" %}
-{% set version = "1.1.8" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pkg_about-{{ version }}.zip
-  sha256: 195577974ad4f2093179d3a2315540b746c4a82b723bed4b487c482a30656cf9
+  sha256: d62c42f18000f7f3becc5a5bc9f40af9d5191f108574d3cae7934324616ef5f6
 
 build:
   noarch: python
