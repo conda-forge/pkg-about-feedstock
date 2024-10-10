@@ -20,7 +20,7 @@ requirements:
     - setuptools >=75.1.0
     - wheel >=0.44.0
     - packaging >=24.1.0
-    - tox >=4.20.0
+    - tox >=4.21.2
     - pip
   run:
     - python >=3.9.0,<4.0.0
