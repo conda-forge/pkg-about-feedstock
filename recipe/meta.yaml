@@ -39,7 +39,8 @@ test:
     - pip
 
 about:
-  home: https://github.com/karpierz/pkg-about
+  home: https://github.com/karpierz/pkg_about
+  doc_url: https://pkg-about.readthedocs.io/en/latest/
   summary: Shares Python package metadata at runtime.
   license: Zlib
   license_file: LICENSE
