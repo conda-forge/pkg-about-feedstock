@@ -3,11 +3,13 @@ About pkg-about-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pkg-about-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/karpierz/pkg-about
+Home: https://github.com/karpierz/pkg_about
 
 Package license: Zlib
 
 Summary: Shares Python package metadata at runtime.
+
+Documentation: https://pkg-about.readthedocs.io/en/latest/
 
 Current build status
 ====================
