@@ -17,15 +17,15 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=75.1.0
+    - setuptools >=75.6.0
     - wheel >=0.44.0
-    - packaging >=24.1.0
-    - tox >=4.21.2
+    - packaging >=24.2.0
+    - tox >=4.23.2
     - pip
   run:
     - python >={{ python_min }}
-    - setuptools >=75.1.0
-    - packaging >=24.1.0
+    - setuptools >=75.6.0
+    - packaging >=24.2.0
     - importlib-metadata >=8.5.0
     - tomli >=2.0.1
     - docutils >=0.21.2
