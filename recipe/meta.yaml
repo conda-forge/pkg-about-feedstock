@@ -1,5 +1,5 @@
 {% set name = "pkg-about" %}
-{% set version = "1.2.7" %}
+{% set version = "1.2.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 864d7dc14c72cae58f448924d3b377e2a85c9736d76fe99f4cf52e443131b75c
+  sha256: cb3bc64b76d103f81a6ae1032b50a8bc499bd2229597433e18011990d0239ee4
 
 build:
   noarch: python
@@ -20,13 +20,13 @@ requirements:
     - setuptools >=75.8.0
     - wheel >=0.44.0
     - packaging >=24.2.0
-    - tox >=4.23.2
+    - tox >=4.24.1
     - pip
   run:
     - python >={{ python_min }}
     - setuptools >=75.8.0
     - packaging >=24.2.0
-    - importlib-metadata >=8.5.0
+    - importlib-metadata >=8.6.1
     - tomli >=2.0.1
     - docutils >=0.21.2
 
