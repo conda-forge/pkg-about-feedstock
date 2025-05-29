@@ -1,5 +1,6 @@
 {% set name = "pkg-about" %}
 {% set version = "1.3.4" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -17,18 +18,16 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=76.0.0
-    - wheel >=0.44.0
-    - packaging >=24.2.0
-    - tox >=4.24.2
+    - setuptools >=80.3.0
+    - packaging >=25.0.0
+    - tox >=4.25.0
     - pip
   run:
     - python >={{ python_min }}
-    - setuptools >=76.0.0
-    - packaging >=24.2.0
-    - importlib-metadata >=8.6.1
-    - tomli >=2.0.1
-    - docutils >=0.21.2
+    - setuptools >=80.3.0
+    - importlib-metadata >=8.7.0
+    - packaging >=25.0.0
+    - tomli >=2.2.1
 
 test:
   imports:
