@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pkg-about
-  version: "1.3.7"
+  version: "1.4.0"
   python_min: '3.10'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: c581831d72d15b1a80eddc6ce21861faab0471d3704a1d63bc0869c9475b24e8
+  sha256: 0f795cca2b228e90c3424616475381e5d528d84ae7463995fc7f660ac0c9bb13
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - python ${{ python_min }}.*
     - setuptools >=80.9.0
     - packaging >=25.0.0
-    - tox >=4.27.0
+    - tox >=4.28.4
     - pip
   run:
     - python >=${{ python_min }}
