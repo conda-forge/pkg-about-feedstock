@@ -27,6 +27,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - setuptools >=80.9.0
+    - typing-extensions >=4.15.0
     - packaging >=25.0.0
     - tomli >=2.3.0
 
