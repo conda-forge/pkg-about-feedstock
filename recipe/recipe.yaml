@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pkg-about
-  version: "2.0.7"
+  version: "2.0.8"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 55c36b216394e51376300019fa82ef63b877a0efb4b7f1511dcbc3a427b0ec52
+  sha256: 84a70d66829cf9437613d0ebf1875f866e1df125c31a9aad6c8555576f9822df
 
 build:
   number: 0
@@ -27,6 +27,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - setuptools >=80.9.0
+    - typing-extensions >=4.15.0
     - packaging >=25.0.0
     - tomli >=2.3.0
 
