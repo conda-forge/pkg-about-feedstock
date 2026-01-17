@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pkg-about
-  version: "2.0.11"
+  version: "2.0.12"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 5310ea4eb5ec1218f04547f61bbf9aebf12b579ec0e2253638b2db0fb7e0b9bb
+  sha256: 58584e31e06f00f694fc0206a06952ce227adf74eb18180e71b7c1c409b71fc1
 
 build:
   number: 0
