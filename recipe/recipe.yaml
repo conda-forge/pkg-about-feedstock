@@ -20,16 +20,15 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - setuptools >=80.9.0
-    - packaging >=25.0.0
-    - tox >=4.32.0
+    - setuptools >=80.10.1
+    - packaging >=26.0.0
     - pip
   run:
     - python >=${{ python_min }}
-    - setuptools >=80.9.0
+    - importlib-metadata >=4.6
     - typing_extensions >=4.15.0
-    - packaging >=25.0.0
-    - tomli >=2.4.0
+    - packaging >=26.0.0
+    - python-build >=1.4.0
 
 tests:
   - python:
