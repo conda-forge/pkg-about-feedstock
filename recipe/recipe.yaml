@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - setuptools >=80.10.2
+    - setuptools >=81.0.0
     - packaging >=26.0.0
     - pip
   run:
