@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pkg-about
-  version: "2.2.0"
+  version: "2.3.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 113653df313ac825eb715f94af63f6996383ece812330701903ff09612d1cc35
+  sha256: 83e45db94fda2c3f94c1955ec4e3576bcfab4339d59b26c2e46e199c8ba03ea2
 
 build:
   number: 0
@@ -28,14 +28,16 @@ requirements:
     - importlib-metadata >=4.6
     - typing_extensions >=4.15.0
     - packaging >=26.0.0
-    - python-build >=1.4.0
+    - python-build >=1.4.2
 
 tests:
   - python:
       imports:
         - pkg_about
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Shares Python package metadata at runtime.
