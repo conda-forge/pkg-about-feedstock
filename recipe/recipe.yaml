@@ -28,14 +28,16 @@ requirements:
     - importlib-metadata >=4.6
     - typing_extensions >=4.15.0
     - packaging >=26.0.0
-    - python-build >=1.4.0
+    - python-build >=1.4.2
 
 tests:
   - python:
       imports:
         - pkg_about
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Shares Python package metadata at runtime.
