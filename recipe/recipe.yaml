@@ -2,7 +2,8 @@ schema_version: 1
 
 context:
   name: pkg-about
-  version: "2.3.0"
+  version: "2.4.0"
+  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 83e45db94fda2c3f94c1955ec4e3576bcfab4339d59b26c2e46e199c8ba03ea2
+  sha256: e784e7e3271d36390aaea8140ab50aeff2ff2e1901ff1e4c22f3ce3b7e3ae8d9
 
 build:
   number: 0
@@ -21,14 +22,14 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - setuptools >=81.0.0
-    - packaging >=26.0.0
+    - packaging >=26.2.0
     - pip
   run:
     - python >=${{ python_min }}
     - importlib-metadata >=4.6
     - typing_extensions >=4.15.0
-    - packaging >=26.0.0
-    - python-build >=1.4.2
+    - packaging >=26.2.0
+    - python-build >=1.5.0
 
 tests:
   - python:
