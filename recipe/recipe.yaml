@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pkg-about
-  version: "2.4.2"
+  version: "2.4.3"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: f5a3b2e402842141a8a36069dbb57ad9d27aa1623574863654cc26b5cc4bd545
+  sha256: 0aa3b8938f691218d828fb4a0b4f3cc1d4fbed68c473c407db7b8a06d7c14748
 
 build:
   number: 0
